@@ -55,5 +55,18 @@ public class Main {
             System.out.print(num + " ");
         }
         System.out.print("\noutputArray4: " + outputArray4);
+        //task 5
+        int[] inputArray5 = {50000, -20000, 30000, -10000, 40000};
+        int outputArray5 = 0;
+        for (int i = 0; i < 5; i++) {
+            if (inputArray5[i] > 0) {
+                outputArray5++;
+            }
+        }
+        System.out.print("inputArray5: ");
+        for (int num : inputArray5) {
+            System.out.print(num + " ");
+        }
+        System.out.print("\noutputArray5: " + outputArray5);
     }
 }
