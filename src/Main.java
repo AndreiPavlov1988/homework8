@@ -40,5 +40,20 @@ public class Main {
         for (boolean flag : outputArray3) {
             System.out.print(flag + " ");
         }
+    //task 4
+        int[] inputArray4 = {5000, 3000, -1000, 2000, 4000};
+        boolean outputArray4 = true;
+
+        for (int i = 0; i < 5; i++) {
+            if (inputArray4[i] < 0) {
+                outputArray4 = false;
+                break;
+            }
+        }
+        System.out.print("inputArray4: ");
+        for (int num : inputArray4) {
+            System.out.print(num + " ");
+        }
+        System.out.print("\noutputArray4: " + outputArray4);
     }
 }
