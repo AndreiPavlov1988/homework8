@@ -14,12 +14,31 @@ public class Main {
         double[] outputArray1 = {sum, max, min, average};
         System.out.println("inputArray1: " + java.util.Arrays.toString(inputArray1));
         System.out.println("outputArray1: " + java.util.Arrays.toString(outputArray1));
-    //task 2
+        //task 2
         int[] inputArray2 = {50000, 75000, 60000, 80000, 65000};
         double[] outputArray2 = new double[inputArray2.length];
         for (int i = 0; i < inputArray2.length; i++) {
-            outputArray2[i] = inputArray2[i] * 0.13;}
+            outputArray2[i] = inputArray2[i] * 0.13;
+        }
         System.out.println("inputArray2: " + Arrays.toString(inputArray2));
         System.out.println("outputArray2: " + Arrays.toString(outputArray2));
+        //task 3
+        int[] inputArray3 = {3000, 7000, 4500, 8000, 6000};
+        boolean[] outputArray3 = new boolean[5];
+        for (int i = 0; i < 5; i++) {
+            if (inputArray3[i] > 5000) {
+                outputArray3[i] = true;
+            } else {
+                outputArray3[i] = false;
+            }
+        }
+        System.out.print("inputArray3: ");
+        for (int num : inputArray3) {
+            System.out.print(num + " ");
+        }
+        System.out.print("\noutputArray3: ");
+        for (boolean flag : outputArray3) {
+            System.out.print(flag + " ");
+        }
     }
 }
